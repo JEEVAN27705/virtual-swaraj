@@ -116,168 +116,159 @@ const Home = () => {
 
 
       {/* Explore UNESCO World Heritage Site */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">
-              Explore UNESCO World Heritage Site.
-            </h2>
-            <p className="text-gray-600 max-w-3xl mx-auto">
-              "Explore ancient forts, delve into untold stories, and immerse yourself in the rich tapestry of the 
-              past. Discover fascinating culture, and history - all from your armchair."
-            </p>
-          </div>
+  <section className="py-16 bg-white">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="text-center mb-12">
+      <h2 className="text-3xl font-bold text-gray-800 mb-4">
+        Explore UNESCO World Heritage Site.
+      </h2>
+      <p className="text-gray-600 max-w-3xl mx-auto">
+        Explore ancient forts, delve into untold stories, and immerse yourself in the rich tapestry of the past. Discover fascinating culture, and history - all from your armchair.
+      </p>
+    </div>
 
-          <div className="flex justify-center gap-4 mb-12">
-            <Button variant="outline" className="rounded-full">Raigad Fort</Button>
-            <Button variant="outline" className="rounded-full">Sinhagad Fort</Button>
-            <Button className="rounded-full bg-primary">Shivneri Fort</Button>
-            <Button variant="outline" className="rounded-full">Pratapgad Fort</Button>
-            <Button variant="outline" className="rounded-full">Lohagad Fort</Button>
-            <Button variant="outline" className="rounded-full">Torna Fort</Button>
-            <Button variant="outline" className="rounded-full">Rajgad Fort</Button>
-            <Button variant="outline" className="rounded-full">Vasai Fort</Button>
-          </div>
+    {/* Larger filter pills */}
+    <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-12">
+      <Button variant="outline" className="rounded-full px-5 py-2.5 text-sm md:px-6 md:py-3 md:text-base">Raigad Fort</Button>
+      <Button variant="outline" className="rounded-full px-5 py-2.5 text-sm md:px-6 md:py-3 md:text-base">Sinhagad Fort</Button>
+      <Button className="rounded-full px-5 py-2.5 text-sm md:px-6 md:py-3 md:text-base bg-primary">Shivneri Fort</Button>
+      <Button variant="outline" className="rounded-full px-5 py-2.5 text-sm md:px-6 md:py-3 md:text-base">Pratapgad Fort</Button>
+      <Button variant="outline" className="rounded-full px-5 py-2.5 text-sm md:px-6 md:py-3 md:text-base">Lohagad Fort</Button>
+      <Button variant="outline" className="rounded-full px-5 py-2.5 text-sm md:px-6 md:py-3 md:text-base">Torna Fort</Button>
+      <Button variant="outline" className="rounded-full px-5 py-2.5 text-sm md:px-6 md:py-3 md:text-base">Rajgad Fort</Button>
+      <Button variant="outline" className="rounded-full px-5 py-2.5 text-sm md:px-6 md:py-3 md:text-base">Vasai Fort</Button>
+    </div>
 
-          {/* Featured Fort Card */}
-          <div className="max-w-6xl mx-auto">
-            <div 
-              className="relative rounded-3xl overflow-hidden bg-cover bg-center min-h-[400px] flex items-end"
-              style={{
-                backgroundImage: `url('${"/placeholder.svg"}')`
-              }}
-            >
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-              
-              <div className="absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm mx-6 rounded-2xl p-8 shadow-2xl" style={{ transform: 'translateY(50%)', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)' }}>
-                <div className="space-y-6">
-                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                    <div className="lg:col-span-2">
-                      <h3 className="text-5xl font-bold text-gray-900 mb-4">Raigad</h3>
-                      <p className="text-gray-600 text-base leading-relaxed">
-                        Raigad Fort was the capital of the Maratha Empire under 
-                        Chhatrapati Shivaji Maharaj, symbolizing Maratha independence 
-                        and resilience. It was here that Shivaji was crowned as Chhatrapati 
-                        in 1674
-                      </p>
-                    </div>
-                    
-                    <div className="grid grid-cols-2 gap-6">
-                      <div className="space-y-4">
-                        <div className="flex items-center gap-2">
-                          <div className="w-6 h-6 bg-orange-100 rounded flex items-center justify-center">
-                            <span className="text-orange-600 text-xs">📋</span>
-                          </div>
-                          <span className="text-orange-600 font-medium text-sm">Guide Assistance</span>
-                        </div>
-                        
-                        <div className="flex items-center gap-2">
-                          <div className="w-6 h-6 bg-blue-100 rounded flex items-center justify-center">
-                            <span className="text-blue-600 text-xs">🗣</span>
-                          </div>
-                          <span className="text-blue-600 font-medium text-sm">Language : मराठी / English</span>
-                        </div>
-                      </div>
-                      
-                      <div className="space-y-4">
-                        <div className="flex items-center gap-2">
-                          <div className="w-6 h-6 bg-yellow-100 rounded flex items-center justify-center">
-                            <span className="text-orange-500 text-xs">⏱</span>
-                          </div>
-                          <span className="text-orange-500 font-medium text-sm">50 min tour</span>
-                        </div>
-                        
-                        <div className="flex items-center gap-2">
-                          <div className="w-6 h-6 bg-purple-100 rounded flex items-center justify-center">
-                            <span className="text-purple-600 text-xs">🔄</span>
-                          </div>
-                          <span className="text-purple-600 font-medium text-sm">360° Virtual Experience</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="flex justify-end">
-                    <Link to="/explore-forts">
-                      <Button className="px-8 py-3 bg-teal-400 hover:bg-teal-500 text-white font-medium rounded-full text-base">
-                        Explore Now →
-                      </Button>
-                    </Link>
-                  </div>
+    {/* Featured Fort Card – all content at the bottom */}
+    <div className="max-w-6xl mx-auto">
+      <div
+        className="relative rounded-[28px] overflow-hidden bg-cover bg-center ring-1 ring-black/5"
+        style={{
+          backgroundImage: "url('/Lohagad.png')", // update to your image path
+          minHeight: "560px",
+        }}
+      >
+        {/* Bottom-heavy gradient for readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+
+        {/* Bottom-anchored row */}
+        <div className="relative z-10 w-full h-full flex items-end">
+          <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-6 items-end px-6 md:px-10 lg:px-14 pb-8 md:pb-10">
+            {/* Left: Title + description */}
+            <div className="lg:col-span-2">
+              <h3 className="text-white text-[40px] md:text-[56px] font-extrabold leading-tight mb-3 drop-shadow-sm">
+                Raigad
+              </h3>
+              <p className="text-white/95 text-base md:text-lg leading-relaxed max-w-3xl drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)]">
+                Raigad Fort was the capital of the Maratha Empire under Chhatrapati Shivaji Maharaj,
+                symbolizing Maratha independence and resilience. It was here that Shivaji was crowned
+                as Chhatrapati in 1674.
+              </p>
+            </div>
+
+            {/* Right: Chips + CTA */}
+            <div className="flex flex-col justify-end">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div className="flex items-center gap-2 rounded-xl bg-white/92 backdrop-blur px-3 py-2 shadow-md">
+                  <span className="w-7 h-7 grid place-items-center rounded bg-orange-100 text-orange-600 text-sm">📋</span>
+                  <span className="text-[15px] font-medium text-orange-700">Guide Assistance</span>
                 </div>
+                <div className="flex items-center gap-2 rounded-xl bg-white/92 backdrop-blur px-3 py-2 shadow-md">
+                  <span className="w-7 h-7 grid place-items-center rounded bg-amber-100 text-amber-600 text-sm">⏱</span>
+                  <span className="text-[15px] font-medium text-amber-700">50 min tour</span>
+                </div>
+                <div className="flex items-center gap-2 rounded-xl bg-white/92 backdrop-blur px-3 py-2 shadow-md">
+                  <span className="w-7 h-7 grid place-items-center rounded bg-blue-100 text-blue-600 text-sm">🗣</span>
+                  <span className="text-[15px] font-medium text-blue-700">Language : मराठी / English</span>
+                </div>
+                <div className="flex items-center gap-2 rounded-xl bg-white/92 backdrop-blur px-3 py-2 shadow-md">
+                  <span className="w-7 h-7 grid place-items-center rounded bg-purple-100 text-purple-600 text-sm">🔄</span>
+                  <span className="text-[15px] font-medium text-purple-700">360° Virtual Experience</span>
+                </div>
+              </div>
+
+              <div className="mt-5">
+                <Link to="/explore-forts">
+                  <Button className="px-6 md:px-8 py-3 rounded-full bg-teal-400 hover:bg-teal-500 text-white font-medium">
+                    Explore Now →
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     
-    {/* Must Experience Section */}
+     {/* Must Experience Section */}
 <section className="py-16 bg-white">
   <div className="max-w-7xl mx-auto px-6">
     <div className="text-center mb-12">
       <h2 className="text-3xl font-bold text-gray-800 mb-2">Must Experience</h2>
-      <p className="text-gray-600">A royal journey through Maharashtra's pride</p>
+      <p className="text-gray-600">A digital journey through Maharashtra’s pride</p>
     </div>
 
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       {mustExperienceForts.map((fort, index) => (
-        <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
+        <Card
+          key={index}
+          className="overflow-hidden bg-white border border-teal-200 rounded-xl hover:shadow-md transition-shadow"
+        >
           {/* Image */}
-          <div className="aspect-video bg-gray-200">
+          <div className="aspect-[16/10] bg-gray-100">
             <img
               src={fort.image}
               alt={fort.name}
               className="w-full h-full object-cover"
               onError={(e) => {
                 e.currentTarget.onerror = null;
-                e.currentTarget.src = "/placeholder.svg"; // fallback
+                e.currentTarget.src = "/placeholder.svg";
               }}
             />
           </div>
 
-          {/* Card Body */}
+          {/* Body */}
           <div className="px-5 pt-4 pb-5">
-            <h3 className="text-xl font-semibold text-slate-900 mb-3">{fort.name}</h3>
+            {/* Title */}
+            <h3 className="text-xl font-semibold text-slate-900 mb-1">{fort.name}</h3>
 
-            {/* Meta stacked vertically */}
-            <div className="space-y-2.5 text-slate-700">
-              <div className="flex items-center gap-2 text-sm">
+            {/* Meta stacked like the mock */}
+            <div className="space-y-2 text-sm text-slate-700 mb-2">
+              <div className="flex items-center gap-2">
                 <span className="w-5 h-5 grid place-items-center">⏱</span>
-                <span>
-                  {fort.name.includes("Vishal") ? "50 min Tour" :
-                   fort.name.includes("Sinhagad") ? "57 min Tour" :
-                   fort.name.includes("Torna") ? "46 min Tour" :
-                   fort.name.includes("Vaspur") || fort.name.includes("Visapur") ? "38 min Tour" :
-                   "50 min Tour"}
-                </span>
+                <span>{fort.tour || "50 min Tour"}</span>
               </div>
-
-              <div className="flex items-center gap-2 text-sm">
-                <span className="w-5 h-5 grid place-items-center">🔄</span>
+              <div className="flex items-center gap-2">
+                <span className="w-5 h-5 grid place-items-center">🎯</span>
                 <span>360° Experience</span>
               </div>
-
-              <div className="flex items-center gap-2 text-sm">
+              <div className="flex items-center gap-2">
                 <span className="w-5 h-5 grid place-items-center">📋</span>
                 <span>Guide Assistance</span>
               </div>
             </div>
 
-            {/* Rating row */}
-            <div className="mt-3 flex items-center gap-2">
+            {/* Rating row (stars + count) */}
+            <div className="mt-2 mb-3 flex items-center gap-2">
               <div className="text-amber-400 leading-none">
-                {"★".repeat(Math.floor(fort.rating))}
+                {"★".repeat(Math.floor(fort.rating || 4.6))}
               </div>
-              <span className="text-xs text-slate-500">{fort.reviews} reviews</span>
+              <span className="text-xs text-slate-500">
+                {fort.reviews || 500} reviews
+              </span>
             </div>
 
             {/* Explore link right-aligned */}
-            <div className="mt-4 flex justify-end">
-              <Link to={`/fort/${fort.name.toLowerCase().replace(/\s+/g, "-")}`}>
-                <span className="text-teal-700 hover:text-teal-800 font-semibold inline-flex items-center gap-1">
-                  Explore Now → 
-                </span>
+            <div className="mt-3 flex justify-end">
+              <Link
+                to={`/fort/${fort.name.toLowerCase().replace(/\s+fort/i, "").replace(/\s+/g, "-")}`}
+                className="text-teal-700 hover:text-teal-800 font-semibold inline-flex items-center gap-1"
+              >
+                Explore Now →
               </Link>
             </div>
           </div>
@@ -286,7 +277,6 @@ const Home = () => {
     </div>
   </div>
 </section>
-
 
 
       {/* Footer */}

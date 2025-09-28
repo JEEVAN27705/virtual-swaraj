@@ -8,17 +8,18 @@ import { Search } from "lucide-react";
 
 const ExploreForts = () => {
   const forts = [
-    { name: "Raigad Fort", type: "Trek", image: "/placeholder.svg", tours: "55 min Tour", experience: "360° Experience", rating: 4.8, reviews: 502, guide: "Guide Assistance" },
-    { name: "Suvarnadurg Fort", type: "Sea", image: "/placeholder.svg", tours: "47 min Tour", experience: "360° Experience", rating: 4.6, reviews: 480, guide: "Guide Assistance" },
-    { name: "Pratapgad Fort", type: "Ground", image: "/placeholder.svg", tours: "45 min Tour", experience: "360° Experience", rating: 4.7, reviews: 200, guide: "Guide Assistance" },
-    { name: "Panhala Fort", type: "Ground", image: "/placeholder.svg", tours: "43 min Tour", experience: "360° Experience", rating: 4.5, reviews: 526, guide: "Guide Assistance" },
-    { name: "Shivneri Fort", type: "Trek", image: "/placeholder.svg", tours: "35 min Tour", experience: "360° Experience", rating: 4.9, reviews: 610, guide: "Guide Assistance" },
-    { name: "Vijaydurg Fort", type: "Sea", image: "/placeholder.svg", tours: "40 min Tour", experience: "360° Experience", rating: 4.4, reviews: 374, guide: "Guide Assistance" },
+    { name: "Raigad Fort", type: "Trek", image: "/Raigad.png", tours: "55 min Tour", experience: "360° Experience", rating: 4.8, reviews: 502, guide: "Guide Assistance" },
+    { name: "Suvarnadurg Fort", type: "Sea", image: "/Survanadurg Fort.png", tours: "47 min Tour", experience: "360° Experience", rating: 4.6, reviews: 480, guide: "Guide Assistance" },
+    { name: "Pratapgad Fort", type: "Ground", image: "/Pratapgad Fort.png", tours: "45 min Tour", experience: "360° Experience", rating: 4.7, reviews: 200, guide: "Guide Assistance" },
+    { name: "Panhala Fort", type: "Ground", image: "/Panhala Fort.png", tours: "43 min Tour", experience: "360° Experience", rating: 4.5, reviews: 526, guide: "Guide Assistance" },
+    { name: "Shivneri Fort", type: "Trek", image: "/shivneri.png", tours: "35 min Tour", experience: "360° Experience", rating: 4.9, reviews: 610, guide: "Guide Assistance" },
+    { name: "Vijaydurg Fort", type: "Sea", image: "/Vijaydurg Fort.png", tours: "40 min Tour", experience: "360° Experience", rating: 4.4, reviews: 374, guide: "Guide Assistance" },
     { name: "Torna Fort", type: "Trek", image: "/Torna.png", tours: "46 min Tour", experience: "360° Experience", rating: 4.6, reviews: 312, guide: "Guide Assistance" },
     { name: "Sinhagad Fort", type: "Trek", image: "/sinhagad.png", tours: "57 min Tour", experience: "360° Experience", rating: 4.8, reviews: 735, guide: "Guide Assistance" },
-    { name: "Lohagad Fort", type: "Trek", image: "/placeholder.svg", tours: "44 min Tour", experience: "360° Experience", rating: 4.7, reviews: 689, guide: "Guide Assistance" },
-    { name: "Sindhudurg Fort", type: "Sea", image: "/placeholder.svg", tours: "50 min Tour", experience: "360° Experience", rating: 4.5, reviews: 452, guide: "Guide Assistance" },
-    { name: "Salher Fort", type: "Ground", image: "/placeholder.svg", tours: "45 min Tour", experience: "360° Experience", rating: 4.6, reviews: 268, guide: "Guide Assistance" },
+    { name: "Lohagad Fort", type: "Trek", image: "/Lohagad.png", tours: "44 min Tour", experience: "360° Experience", rating: 4.7, reviews: 689, guide: "Guide Assistance" },
+    { name: "Sindhudurg Fort", type: "Sea", image: "/Sindhudurg Fort.png", tours: "50 min Tour", experience: "360° Experience", rating: 4.5, reviews: 452, guide: "Guide Assistance" },
+    { name: "Salher Fort", type: "Ground", image: "/Salher Fort.png", tours: "45 min Tour", experience: "360° Experience", rating: 4.6, reviews: 268, guide: "Guide Assistance" },
+    { name: "Rajgad Fort", type: "Ground", image: "/Rajgad.png", tours: "50 min Tour", experience: "360° Experience", rating: 4.7, reviews: 312, guide: "Guide Assistance" },
   ];
 
   const [searchQuery, setSearchQuery] = useState("");
